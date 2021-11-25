@@ -21,11 +21,8 @@ const MovieInfo : React.FC <Props> = ({movie}) => {
     const [ user ] = useContext(Context);
 
     const CallBack = async (value : string) => {
-        console.log(user.session_id, movie.id, value);
-        
         const Rate = await API.rateMovie(user.sessionId, movie.id, value);
-        console.log(Rate);
-        
+        console.log(Rate); 
     }
 
     return(
@@ -53,8 +50,10 @@ const MovieInfo : React.FC <Props> = ({movie}) => {
                                 {director.name}
                             </p>)}
                         </div>
-                        <Rate CallBack={CallBack} />
                     </div>
+                    <p>Rate movie:</p>
+
+                    <Rate CallBack={CallBack} />
                 </Text>
             </Content>
         </Wrapper>

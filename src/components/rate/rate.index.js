@@ -1,9 +1,5 @@
 import React, { useState} from "react";
 
-import  { Wrapper , Content} from './rate.style';
-
-
-
 const Rate = ({CallBack}) => {
     const [value , setvalue] = useState('5');
     return (
