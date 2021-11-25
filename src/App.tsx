@@ -24,15 +24,14 @@ import Login from './components/Login';
 const App : React.FC = () => (
     <Router>
       <Userprovider>
-      <Header />
-      <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/:movieId" element={<Movie />} /> 
-          <Route path="/*" element={<NotFound />} /> 
-      </Routes>
-     
-      <GlobalStyle />
+        <Header />
+          <Routes>
+              <Route path="/login" element={<Login />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/:movieId" element={<Movie />} /> 
+              <Route path="/*" element={<NotFound />} /> 
+          </Routes>
+        <GlobalStyle />
       </Userprovider>
     </Router>
 );

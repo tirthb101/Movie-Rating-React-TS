@@ -3,6 +3,11 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
     background: var(--darkGrey);
     padding: 0px 20px;
+
+    a, span {
+        text-decoration: none;
+        color: #ffffff;
+    }
 `;
 
 export const Content = styled.div`
