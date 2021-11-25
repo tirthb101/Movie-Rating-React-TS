@@ -25,6 +25,7 @@ const MovieInfo : React.FC <Props> = ({movie}) => {
         console.log(Rate); 
     }
 
+    
     return(
         <Wrapper backdrop={movie.backdrop_path}>
             <Content>
