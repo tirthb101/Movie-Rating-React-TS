@@ -40,7 +40,7 @@ const Login = () => {
                 password
                 ));
             console.log(requestToken);
-            setUser({sessionId: sessionId.session_id, username : username});
+            setUser({sessionId: sessionId.sessionId, username : username});
 
             navigate("/")
         }
